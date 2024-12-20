@@ -1,0 +1,80 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	border: 1px solid red;
+}
+
+/* Стол */
+.game__table {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+/* верхняя часть стола для активок и колод */
+.game__table-top {
+	min-height: 60%;
+	display: flex;
+	flex-direction: row;
+}
+.active__items__wrapper {
+	height: 100%;
+	width: 70%;
+}
+/* Инфа и колоды */
+.info__wrapper {
+	display: grid;
+	grid-template-areas: 'a a' 'b b';
+	border: 1px solid blue;
+	gap: 10px;
+	justify-items: stretch;
+	padding: 10px;
+	margin-left: 20px;
+}
+/* Инт колоды */
+.int__deck-reset {
+	align-self: center;
+	height: 300px;
+}
+.int__deck-main {
+	align-self: center;
+	height: 300px;
+}
+/* Инфа и основная колода */
+
+.deck__wrapper {
+	align-self: center;
+	height: 300px;
+	overflow: hidden;
+	cursor: pointer;
+}
+.deck__wrapper-shirt {
+	height: 100%;
+}
+.deck__reset {
+	align-self: center;
+	height: 300px;
+}
+
+/* Низ стола */
+.game__table-bot {
+	width: 100%;
+	height: auto;
+}
+
+.deck__hand {
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-flow: row nowrap;
+	gap: 10px;
+	justify-content: center;
+	align-items: center;
+}
+.card-block {
+	display: flex;
+	width: auto;
+	height: 300px;
+	cursor: pointer;
+}
